@@ -8,13 +8,30 @@ To implement customer segmentation using K-Means clustering on the Mall Customer
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-1. Data Loading
-2. Data Exploration
-3. Feature Selection
-4. Data Preprocessing
-5. Determining Optimal Number of Clusters
-6. Model Training with K-Means Clustering
-7. Cluster Analysis and Visualization
+#### 1. Import Libraries
+
+* Use pandas, seaborn, matplotlib, and scikit-learn for data manipulation, clustering, and visualization.
+#### 2. Load Dataset
+
+* Load the customer dataset from the given URL and inspect its structure.
+#### 3. Feature Selection
+
+* Select relevant features such as Age, Annual Income (k$), and Spending Score (1-100) for clustering.
+#### 4. Data Preprocessing
+
+* Standardize the selected features using StandardScaler to ensure better clustering performance.
+#### 5. Optimal Cluster Determination
+
+* Apply the Elbow Method to identify the optimal number of clusters by plotting WCSS (Within-Cluster Sum of Squares).
+#### 6. K-Means Model Training
+
+* Train a K-Means model with the optimal number of clusters (e.g., 4 based on the elbow curve).
+#### 7. Cluster Evaluation
+
+* Calculate the Silhouette Score to measure the quality of clustering.
+#### 8. Cluster Visualization
+
+* Visualize the clusters using scatter plots, coloring the points based on cluster labels, and analyzing customer segments.
 
 
 ## Program:
